@@ -14,6 +14,10 @@ int main()
         for (int j = 0; j < colonne; j++)
         {
             matrice[i][j] = rand() % 10;
+            if(i == j || i + j == 8)
+            {
+                matrice[i][j] = 0;
+            }
         }
     }
     cout << "    ";
@@ -31,6 +35,7 @@ int main()
     for (int i = 0; i < righe; i++)
     {
         cout << i << "|  ";
+
         for (int j = 0; j < colonne; j++)
         {
             cout << matrice[i][j] << " ";

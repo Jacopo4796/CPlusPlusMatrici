@@ -6,6 +6,9 @@ int main()
 {
     int righe = 9;
     int colonne = 9;
+
+    //            Y       X
+    //           LAT     LONG
     int matrice[righe][colonne];
     for (int i = 0; i < righe; i++)
     {
